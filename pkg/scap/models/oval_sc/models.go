@@ -124,6 +124,45 @@ type SystemDataType struct {
 
 	Item []ItemType `xml:",any"`
 
+/*
+	// grep type pkg/scap/models/oval_sc/*_sc.go | awk '{print $2}' | grep Item$
+
+	// unix
+	DnscacheItem              []DnscacheItem              `xml:"dnscache_item,omitempty"`
+	FileItem                  []FileItem                  `xml:"file_item,omitempty"`
+	FileextendedattributeItem []FileextendedattributeItem `xml:"fileextendedattribute_item,omitempty"`
+	GconfItem                 []GconfItem                 `xml:"gconf_item,omitempty"`
+	InetdItem                 []InetdItem                 `xml:"inetd_item,omitempty"`
+	InterfaceItem             []InterfaceItem             `xml:"interface_item,omitempty"`
+	PasswordItem              []PasswordItem              `xml:"password_item,omitempty"`
+	ProcessItem               []ProcessItem               `xml:"process_item,omitempty"`
+	Process58Item             []Process58Item             `xml:"process58_item,omitempty"`
+	RoutingtableItem          []RoutingtableItem          `xml:"routingtable_item,omitempty"`
+	RunlevelItem              []RunlevelItem              `xml:"runlevel_item,omitempty"`
+	SccsItem                  []SccsItem                  `xml:"sccs_item,omitempty"`
+	ShadowItem                []ShadowItem                `xml:"shadow_item,omitempty"`
+	SymlinkItem               []SymlinkItem               `xml:"symlink_item,omitempty"`
+	SysctlItem                []SysctlItem                `xml:"sysctl_item,omitempty"`
+	UnameItem                 []UnameItem                 `xml:"uname_item,omitempty"`
+	XinetdItem                []XinetdItem                `xml:"xinetd_item,omitempty"`
+
+	// linux
+	ApparmorstatusItem         []ApparmorstatusItem         `xml:"apparmorstatus_item,omitempty"`
+	DpkginfoItem               []DpkginfoItem               `xml:"dpkginfo_item,omitempty"`
+	IflistenersItem            []IflistenersItem            `xml:"iflisteners_item,omitempty"`
+	InetlisteningserverItem    []InetlisteningserverItem    `xml:"inetlisteningserver_item,omitempty"`
+	PartitionItem              []PartitionItem              `xml:"partition_item,omitempty"`
+	RpminfoItem                []RpminfoItem                `xml:"rpminfo_item,omitempty"`
+	RpmverifyItem              []RpmverifyItem              `xml:"rpmverify_item,omitempty"`
+	RpmverifyfileItem          []RpmverifyfileItem          `xml:"rpmverifyfile_item,omitempty"`
+	RpmverifypackageItem       []RpmverifypackageItem       `xml:"rpmverifypackage_item,omitempty"`
+	SelinuxbooleanItem         []SelinuxbooleanItem         `xml:"selinuxboolean_item,omitempty"`
+	SelinuxsecuritycontextItem []SelinuxsecuritycontextItem `xml:"selinuxsecuritycontext_item,omitempty"`
+	SlackwarepkginfoItem       []SlackwarepkginfoItem       `xml:"slackwarepkginfo_item,omitempty"`
+	SystemdunitdependencyItem  []SystemdunitdependencyItem  `xml:"systemdunitdependency_item,omitempty"`
+	SystemdunitpropertyItem    []SystemdunitpropertyItem    `xml:"systemdunitproperty_item,omitempty"`
+*/
+
 	InnerXml string `xml:",innerxml"`
 }
 
