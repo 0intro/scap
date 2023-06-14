@@ -1,7 +1,7 @@
 package ds
 
 import (
-	"github.com/gocomply/scap/pkg/scap/constants"
+	"github.com/0intro/scap/pkg/scap/constants"
 )
 
 func (c *Component) DocumentType() constants.DocumentType {

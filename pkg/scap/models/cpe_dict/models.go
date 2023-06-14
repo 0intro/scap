@@ -4,7 +4,7 @@ package cpe_dict
 
 import (
 	"encoding/xml"
-	"github.com/gocomply/scap/pkg/scap/models/cpe"
+	"github.com/0intro/scap/pkg/scap/models/cpe"
 )
 
 // Element

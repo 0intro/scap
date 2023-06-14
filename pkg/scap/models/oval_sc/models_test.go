@@ -3,7 +3,7 @@ package oval_sc_test
 import (
 	"testing"
 
-	"github.com/gocomply/scap/pkg/scap/scap_document"
+	"github.com/0intro/scap/pkg/scap/scap_document"
 	"github.com/stretchr/testify/assert"
 )
 

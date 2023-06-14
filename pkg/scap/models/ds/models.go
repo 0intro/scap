@@ -4,12 +4,12 @@ package ds
 
 import (
 	"encoding/xml"
-	"github.com/gocomply/scap/pkg/scap/models/cdf"
-	"github.com/gocomply/scap/pkg/scap/models/cpe_dict"
-	"github.com/gocomply/scap/pkg/scap/models/er"
-	"github.com/gocomply/scap/pkg/scap/models/inter"
-	"github.com/gocomply/scap/pkg/scap/models/oval_def"
-	"github.com/gocomply/scap/pkg/scap/models/xml_dsig"
+	"github.com/0intro/scap/pkg/scap/models/cdf"
+	"github.com/0intro/scap/pkg/scap/models/cpe_dict"
+	"github.com/0intro/scap/pkg/scap/models/er"
+	"github.com/0intro/scap/pkg/scap/models/inter"
+	"github.com/0intro/scap/pkg/scap/models/oval_def"
+	"github.com/0intro/scap/pkg/scap/models/xml_dsig"
 )
 
 // Element

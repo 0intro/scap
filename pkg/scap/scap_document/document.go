@@ -7,15 +7,15 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/gocomply/scap/pkg/bz2"
-	"github.com/gocomply/scap/pkg/scap/constants"
-	"github.com/gocomply/scap/pkg/scap/models/cdf"
-	"github.com/gocomply/scap/pkg/scap/models/cpe_dict"
-	"github.com/gocomply/scap/pkg/scap/models/ds"
-	"github.com/gocomply/scap/pkg/scap/models/inter"
-	"github.com/gocomply/scap/pkg/scap/models/oval_def"
-	"github.com/gocomply/scap/pkg/scap/models/oval_res"
-	"github.com/gocomply/scap/pkg/scap/models/oval_sc"
+	"github.com/0intro/scap/pkg/bz2"
+	"github.com/0intro/scap/pkg/scap/constants"
+	"github.com/0intro/scap/pkg/scap/models/cdf"
+	"github.com/0intro/scap/pkg/scap/models/cpe_dict"
+	"github.com/0intro/scap/pkg/scap/models/ds"
+	"github.com/0intro/scap/pkg/scap/models/inter"
+	"github.com/0intro/scap/pkg/scap/models/oval_def"
+	"github.com/0intro/scap/pkg/scap/models/oval_res"
+	"github.com/0intro/scap/pkg/scap/models/oval_sc"
 )
 
 const (

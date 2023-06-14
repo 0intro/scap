@@ -1,4 +1,4 @@
-module github.com/gocomply/scap
+module github.com/0intro/scap
 
 go 1.15
 

@@ -4,8 +4,8 @@ package oval_sc
 
 import (
 	"encoding/xml"
-	"github.com/gocomply/scap/pkg/scap/models/oval"
-	"github.com/gocomply/scap/pkg/scap/models/xml_dsig"
+	"github.com/0intro/scap/pkg/scap/models/oval"
+	"github.com/0intro/scap/pkg/scap/models/xml_dsig"
 )
 
 // Element
