@@ -31,7 +31,7 @@ const (
 type Document struct {
 	XMLName xml.Name               `json:"-"`
 	Type    constants.DocumentType `json:"-"`
-	Bzip2   bool                   `json:"-"`
+	Bzip2   bool
 	*cdf.Benchmark
 	*cpe_dict.CpeList
 	*oval_def.OvalDefinitions
@@ -41,11 +41,7 @@ type Document struct {
 	*inter.Ocil
 }
 
-func ReadDocument(r io.Reader) (*Document, error) {
-	r, bzip2, err := bz2.Decompress(r)
-	if err != nil {
-		return nil, err
-	}
+func read(r io.Reader, bzip2 bool) (*Document, error) {
 	d := xml.NewDecoder(r)
 	for {
 		token, err := d.Token()
@@ -100,6 +96,18 @@ func ReadDocument(r io.Reader) (*Document, error) {
 			}
 		}
 	}
+}
+
+func ReadDoc(r io.Reader) (*Document, error) {
+	return read(r, false)
+}
+
+func ReadDocument(r io.Reader) (*Document, error) {
+	r, bzip2, err := bz2.Decompress(r)
+	if err != nil {
+		return nil, err
+	}
+	return read(r, bzip2)
 }
 
 func ReadDocumentFromFile(filePath string) (*Document, error) {
